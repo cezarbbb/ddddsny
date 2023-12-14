@@ -11,7 +11,7 @@ fn main() {
     assert_eq!(character, "olu");
     println!("Selecting character: {}!", character);
 
-    let file = File::open("/Users/cezarbao/RustProjects/ddddsny/src/Olu.gif").unwrap();
+    let file = File::open("Olu.gif").unwrap();
 
     let decoder = GifDecoder::new(file).unwrap();
     let frames = decoder.into_frames();
