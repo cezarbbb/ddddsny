@@ -1,0 +1,14 @@
+/Users/cezarbao/RustProjects/ddddsny/target/debug/deps/libffmpeg_sys_next-ea8e94c0a313447f.rmeta: /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/lib.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/mod.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/macros.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/error.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/util.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/rational.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/pixfmt.rs /Users/cezarbao/RustProjects/ddddsny/target/debug/build/ffmpeg-sys-next-31d7b03d1e4271f7/out/bindings.rs
+
+/Users/cezarbao/RustProjects/ddddsny/target/debug/deps/ffmpeg_sys_next-ea8e94c0a313447f.d: /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/lib.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/mod.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/macros.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/error.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/util.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/rational.rs /Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/pixfmt.rs /Users/cezarbao/RustProjects/ddddsny/target/debug/build/ffmpeg-sys-next-31d7b03d1e4271f7/out/bindings.rs
+
+/Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/lib.rs:
+/Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/mod.rs:
+/Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/macros.rs:
+/Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/error.rs:
+/Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/util.rs:
+/Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/rational.rs:
+/Users/cezarbao/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ffmpeg-sys-next-6.1.0/src/avutil/pixfmt.rs:
+/Users/cezarbao/RustProjects/ddddsny/target/debug/build/ffmpeg-sys-next-31d7b03d1e4271f7/out/bindings.rs:
+
+# env-dep:OUT_DIR=/Users/cezarbao/RustProjects/ddddsny/target/debug/build/ffmpeg-sys-next-31d7b03d1e4271f7/out
