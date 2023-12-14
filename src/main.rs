@@ -5,11 +5,17 @@ use std::io::{self, Write};
 use termion::{clear, cursor};
 use std::env;
 
+struct Config {
+    character: String
+}
+
 fn main() {
     let args: Vec<String> = env::args().collect();
-    let character = &args[1];
-    assert_eq!(character, "olu");
-    println!("Selecting character: {}!", character);
+    let config = parse_config(&args);
+    let character = config.character;
+    if character != "olu" {
+        panic!("Sorry, the character you choose is not avaliable now!")
+    }
 
     let file = File::open("examples/Olu.gif").unwrap();
 
@@ -21,13 +27,26 @@ fn main() {
 
     for frame in frames {
         let frame = frame.unwrap().into_buffer();
-        let frame = resize_image(&frame, 32, 32);
+        let frame = resize_image(&frame, 64, 64);
         let frame_string = convert_frame_to_string(&frame);
         write!(handle, "{}{}", clear::All, cursor::Goto(1, 1)).unwrap();
         handle.flush().unwrap();
         print!("{}", frame_string);
         std::thread::sleep(std::time::Duration::from_millis(1));
     }
+}
+
+fn parse_config(args: &[String]) -> Config {
+    let default = "olu".to_string();
+    let mut character = default;
+    if args.len() >= 2 {
+        character = args[1].clone();
+        println!("Selecting character: {}!", character);
+    }
+    else { 
+        println!("No character selected yet. Selecting default character: {}!", character);
+    }
+    Config { character }
 }
 
 fn resize_image(image: &image::RgbaImage, width: u32, height: u32) -> image::RgbImage {
@@ -42,16 +61,10 @@ fn convert_frame_to_string(frame: &image::RgbImage) -> String {
         for x in 0..frame.width() {
             let pixel = frame.get_pixel(x, y);
             let (r, g, b) = (pixel[0], pixel[1], pixel[2]);
-            let brightness = ((r as u32 + g as u32 + b as u32) / 3) as u8;
-            let ascii_char = match brightness {
-                0..=64 => " ",
-                65..=128 => ".",
-                129..=192 => "*",
-                _ => "#",
-            };
-            result.push_str(ascii_char);
+            let color_code = format!("\x1b[48;2;{};{};{}m  ", r, g, b);
+            result.push_str(&color_code);
         }
-        result.push('\n');
+        result.push_str("\x1b[0m\n");
     }
     result
 }
