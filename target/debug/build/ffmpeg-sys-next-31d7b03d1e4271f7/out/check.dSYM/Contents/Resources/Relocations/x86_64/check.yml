@@ -1,7 +1,0 @@
----
-triple:          'x86_64-apple-darwin'
-binary-path:     '/Users/cezarbao/RustProjects/ddddsny/target/debug/build/ffmpeg-sys-next-31d7b03d1e4271f7/out/check'
-relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000034B0, symSize: 0x2CC9 }
-  - { offsetInCU: 0x45, offset: 0x45, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000034B0, symSize: 0x2CC9 }
-...
