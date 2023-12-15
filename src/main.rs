@@ -91,10 +91,10 @@ fn convert_frame_to_string(frame: &image::RgbImage) -> String {
             let (r, g, b) = (pixel[0], pixel[1], pixel[2]);
             let brightness = ((r as u32 + g as u32 + b as u32) / 3) as u8;
             let ascii_char = match brightness {
-                0..=64 => " ",
-                65..=128 => ".",
-                129..=192 => "*",
-                _ => "#",
+                0..=64 => "  ",
+                65..=128 => "..",
+                129..=192 => "**",
+                _ => "##",
             };
             result.push_str(ascii_char);
         }
